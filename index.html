@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="center_heading"><h1>Calculator</h1></div>
+        <div class="display"> 
+            <input type="text" disabled placeholder="00" value="" id="disp">
+        </div>
+        <div class="input_details">
+            <input type="button" value="c" id="special" onclick="display.value=''">
+            <input type="button" value="%" id="special" onclick="display.value =display.value/100">
+            <input type="button" value="<=" id="special" onclick="backspace()">
+            <input type="button" value="/" id="special" onclick="add(value)">
+        </div>
+    
+    <div class="input_details">
+        <input type="button" value="7" id="inpu7" onclick="add(value )">
+        <input type="button" value="8" id="inpu8" onclick="add(value )">
+        <input type="button" value="9" id="inpu9" onclick="add(value )">
+        <input type="button" value="*" id="special" onclick="add(value )">
+    </div>
+    <div class="input_details">
+        <input type="button" value="4" id="inpu4" onclick="add(value )">
+        <input type="button" value="5" id="inpu5" onclick="add(value )">
+        <input type="button" value="6" id="inpu6" onclick="add(value )">
+        <input type="button" value="-" id="special" onclick="add(value )">
+    </div>
+    <div class="input_details">
+        <input type="button" value="1" id="inpu1" onclick="add(value )">
+        <input type="button" value="2" id="inpu2" onclick="add(value )">
+        <input type="button" value="3" id="inpu3" onclick="add(value )">
+        <input type="button" value="+" id="special" onclick="add(value )">
+    </div>
+    <div class="input_details">
+        <input type="button" value="00" id="inpu00" onclick="add(value )">
+        <input type="button" value="0" id="inpu0" onclick="add(value )">
+        <input type="button" value="." id="inpuy" onclick="add(value )">
+        <input type="button" value="=" id="equal" onclick="dis()">
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
